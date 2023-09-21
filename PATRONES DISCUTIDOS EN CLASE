@@ -1,0 +1,11 @@
+**Patrones discutidos Para nuestro Proyecto**
+(Estos patrones son más enfocados a la parte visual de nuestro sitio)
+1. Patron de diseño
+  1.1 Patron compuesto (Compound Pattern)
+  1.2 Patrón de Mezclas (Mixin Pattern)
+2. Patrones de renderizado
+  2.1 Patrón de generación estatico incremental( Incremental static generation)
+3. Patron de rendimiento 
+  3.1 Optimizar la carga de terceros (Optimize loading third-parties)
+4. Patron Creacional
+  4.1 Patrón Builder
