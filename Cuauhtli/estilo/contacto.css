@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: center;
+    font-family: 'Poppins', sans-serif;
+ }
+
+ body{
+    background-image: url(/imagenes/transparente.jpg);  
+    width: 100%; 
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+ }
+
+ .contenedor{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.text-center{
+    text-align: center;
+    color: #000000;
+    padding: 35px;
+    font-size: 40px;
+    
+}
+
+.text-center:hover{
+    color: #000000;
+
+}
+
+.clear-fix{
+    clear: both;
+    float: none;
+}
+
+.contacto{
+    
+    padding: 4% 0;
+    
+}
+
+.contact-form{
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+  
+    border-radius: 15px;
+   
+}
+
+.name, select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #f39200;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    outline: none;
+    
+}
+
+.phone, select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #f39200;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    outline: none;
+    
+}
+.mail, select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #f39200;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    outline: none;
+   
+}
+
+input[type=submit]{
+    background-color: #3a002e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+input[type=submit]:hover {
+    background-color: #e6007e;
+    
+}
+
+label{
+    font-size: 30px;
+}
+
+.direccion{
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 10px;
+   
+}
+
+.direccion span{
+    color: #f39200;
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.direccion span:hover{
+    color: #e6007e;
+}
+
+.email-personal{
+    text-align: left;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.email-personal span{
+    color: #f39200;
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+.email-personal span:hover{
+    color: #e6007e;
+}
+
+.telefono{
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #d637b6;
+}
+
+.telefono span{
+    color: #f39200;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.telefono span:hover{
+    color: #e6007e;
+}
+
+@media only screen and (max-width: 760px) {
+    .contacto{
+        padding: 20% 0;
+    }
+
+    .contact-form{
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+
+    iframe{
+        width: 100%;
+    }
+}

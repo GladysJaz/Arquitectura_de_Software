@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+ body {
+    background-image: url(../imagenes/transparente.jpg);  
+    width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f5f5f5;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      height: 100vh; 
+      background-color: #f1f1f1;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      height: 100vh; 
+      background-color: #f1f1f1;
+
+      #lang  {
+         display:block;
+         color:#fff;
+         text-decoration:none;
+         font-weight:300;
+         font-size:30px;
+         padding:3px;
+         font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+         text-transform:uppercase;
+         letter-spacing:2px;
+        }
+    }
+ 
+      input {
+         font:
+         2em "typewriter",
+         sans-serif;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin: 0 auto;
+    }
+ 
+      label {
+         font:
+         2em "typewriter",
+         sans-serif;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin: 0 auto;
+    }
+ 
+      select {
+         margin-bottom: 10px;
+         margin-top: 10px;
+         outline: 0;
+         background: #2ecc71;
+         color: #fff;
+         border: 1px solid crimson;
+         padding: 4px;
+         border-radius: 9px;
+    }
+
+
+
+
+  
+
+  
+ 
