@@ -11,7 +11,7 @@
  }
 
  body{
-    background-image: url(imagenes/transparente.jpg);  
+    background-image: url(/imagenes/transparente.jpg);  
     width: 100%; 
     height: auto;
     background-position: center;
