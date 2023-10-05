@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: center;
+    font-family: 'Poppins', sans-serif;
+ }
+ 
+ body{
+    background-image: url(imagenes/transparente.jpg);  
+    width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f5f5f5;
+ }
+
+
+.mision{
+   
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+ }
+.vision{
+   
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+ }
+.valores{
+   
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+ }
+
+ 
