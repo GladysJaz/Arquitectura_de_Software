@@ -11,7 +11,7 @@
  }
 
  body{
-    background-image: url(imagenes/transparente.jpg);  
+    background-image: url(../imagenes/transparente.jpg);  
     width: 100%; 
     height: auto;
     background-position: center;
@@ -20,9 +20,17 @@
     background-color: #f5f5f5;
  }
 .mediana{
-        width: 500px;
+        width: 200px;
         height: auto;
-       
+        transform: rotate(360deg);
+       -webkit-transform: rotate(360deg);
+}
+.Ajolote{
+    width: 500;
+    height: auto;
+    background-image: auto;
+    position: relative;
+
 }
  header{    
     background-position: center bottom;
@@ -53,17 +61,18 @@
     color: #000000;   
 }
 */
+/*
 .navbar ul{
     display: inline-block;
     padding: #000000;
 }
-
+*/
 .menu .navbar ul li a:hover{
 
     color: #152a33;
 }
 
-#menu{
+.menu{
     display: none;
     width: 25px;
 }
@@ -99,8 +108,8 @@
 .btn-1{
 
     display: inline-block;
-    background-color: rgb(170, 177, 255,0.3);
-    border: 1px solid #aab1ff;
+    background-color: rgba(23, 23, 31, 0.3);
+    border: 1px solid #1c1d20;
     margin: 35px 50px 0px 0px;
     padding: 15px 25px;
     color: #ffffff;
@@ -114,28 +123,38 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
 }
 .service{
     padding: 25px;
     margin: 0px 10px;
     box-shadow: 0px 0px 20px rgba(135, 141, 214, 0.3);
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
 }
 .service img{
     margin-top: -50px;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
 }
 .service h3{
     font-size: 20px;
     color: #0e0e0e;
     margin-bottom: 10px;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
 }
 .service p{
     color: #525254;
     font-size: 16px;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
 }
 .porfolios{
     padding: 100px;
     text-align: center;
-    color: #0e0e0e;
+    color: #ff0000;
 }
 .porfolio{
     display: flex;
@@ -170,6 +189,32 @@
 }
 .porfolio-1 p{
     font-size: 18px;
-    color: #525254;
+    color: #1f1f7c;
     margin-bottom: 25px;
+}
+.info-content{
+    text-align: center;
+    border: #525254;
+    padding: 40px;
+    box-shadow: #f5f5f5;
+    
+}
+.Ajolote:hover{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #0e0e0e;
+    -webkit-box-shadow: 0px 0px 15px 15px #510664;
+    transform: rotate(360deg);
+    
+    }
+.info .info-content h2 p{
+    background:#000000;
+    color:#000000;
+
+}
+.service:hover{
+    box-shadow: 0px 0px 15px 15px #0e0e0e;
+    -webkit-box-shadow: 0px 0px 15px 15px #510664;
+    transform: rotate(360deg);
+    
 }
