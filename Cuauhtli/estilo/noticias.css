@@ -1,23 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-@font-face {
-    font-family: Estilo1;
-    src: url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-    font-family: Estilo2;
-    src: url(../fonts/Roboto-Light.ttf);
-}
-@font-face {
-    font-family: Estilo3;
-    src: url(../fonts/Roboto-Italic.ttf);
-}
-
-@font-face {
-    font-family: Estilo4;
-    src: url(../fonts/Roboto-Regular.ttf);
-}
-
 /*Estilos de los bloques de noticias*/
 body{
     width: 100%;
