@@ -9,7 +9,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background-image: url(../imagenes/transparente.jpg);
+  	background-image: url(../imagenes/fondo.jpg);
 	width: 100%; 
 	height:fit-content;
 	background-position: center;
