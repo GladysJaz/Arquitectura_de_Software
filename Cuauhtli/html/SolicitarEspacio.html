@@ -10,22 +10,43 @@
 <body>
     
     <div class="header">
-        <p> SOLICITA TU ESPACIO CULTURAL</p>
+        <p class="titulo"> SOLICITA TU ESPACIO CULTURAL</p>
     </div>
 
     <div class="contenedor">
-    <div class="Contenido">1</div>
+   
+
     
-        <div class="resumen">2</div>
     
-    
-        <div class="resumen">3</div>
+        <div class="resumen">
+            <form action="../conexion/action.php" method="post">
+             
+                <input type="text" name="name" placeholder="Nombre completo">
+                <input type="email" name="email" placeholder="Correo Institucional">
+                <input type="tel" name="tel"   minlength="8" maxlength="10" placeholder="Telefono">
+                <input type="text" name="nom_evento" placeholder="Nombre del evento">
+                <input type="text" name="espacio" placeholder="Espacio a solicitar">
+                <input type="date" name="fecha_solicitud" placeholder="Fecha de la solicitud">
+                <input type="time" min="09:00" max="18:00" name="hora" placeholder="hora">
 
-        <div class="resumen">4</div>
-        <div class="resumen">5</div>
-
-
-
+                <input type="text" name="descripcion" placeholder="Descripcion del evento">
+                <input type="submit" name="register">
+                <!-- 
+                <label>
+                    Selecciona la fecha:
+                <input type="date" name="Fecha" required pattern="\d{4}-\d{2}-\d{2}" />
+                </label>
+        
+                <select class="select-css">
+                    <option>Seleccionar...</option>
+                    <option>Plaza del estudiante</option>
+                    <option>Auditorio/option>
+                    <option>Canchas de basquetbol</option>
+                </select>
+            -->
+            </form>
+        </div>
     </div>
 </body>
 </html>
+
