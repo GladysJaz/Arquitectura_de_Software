@@ -11,7 +11,7 @@
  }
  
  body{
-    background-image: url(imagenes/transparente.jpg);  
+   background-image: url(../imagenes/nosotros.jpg); 
     width: 100%; 
     background-position: center;
     background-repeat: no-repeat;
