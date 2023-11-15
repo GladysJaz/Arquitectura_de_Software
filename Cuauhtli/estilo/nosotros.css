@@ -20,25 +20,28 @@
  }
 
 
-.mision{
+.mision .vision .valores{
    
    justify-content: center;
    align-items: center;
    text-align: center;
  }
-.vision{
-   
-   justify-content: center;
-   align-items: center;
-   text-align: center;
- }
-.valores{
-   
-   justify-content: center;
-   align-items: center;
-   text-align: center;
- 
 
+ .about-text{
+    width: 90%;
+    display:grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+
+    
+    text-align:justify;
+	 line-height:0.9cm;
+    background:rgba(202, 11, 116, 0.45);
+    border-radius: 10px;
+    padding: 1% 0;
+    
+ }
 /*--------------------------------ESTILO DEL MENU-------------------------------------------*/
 
 
