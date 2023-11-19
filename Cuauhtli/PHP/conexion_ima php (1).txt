@@ -1,0 +1,11 @@
+<?php
+    $conexion = new mysqli("localhost","root","","Cuauhtli");
+
+        if ($conexion){
+        header("Location: mostrar.php"); 
+        }
+            else {
+                echo "Conexion no exitosa";
+
+        } 
+?>
