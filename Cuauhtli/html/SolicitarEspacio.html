@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/uacm.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../estilo/SolicitaEspacio.css" />
+    <title>SOLICITARESPACIO</title>
+</head>
+<body>
+    <!--Menu -->
+    <header>
+        <div class="content">
+  
+          <div class="menu container">
+            <a href="portada.html" class="logo">UACM</a>
+            <img src="../imagenes/uacm.jpg" alt="" class="mediana" height="60" width="50" />
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="../imagenes/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+              <ul>
+                <li> <a href="portada.html">Inicio</a></li>
+                <li> <a href="cuauhtli.html">Cuauhtli</a></li>
+                <li> <a href="nosotros.html">Nosotros</a></li>
+                <li> <a href="SolicitarEspacio.html">Solicitar Espacio</a></li>
+                <li> <a href="noticias.html">Noticias</a></li>
+                <li> <a href="contactos.html">Contáctanos</a></li>
+                
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      
+      <!--Fin del Menu -->
+    
+    <div class="header">
+        <p class="titulo"> Solicita un Espacio Cultural</p>
+    </div>
+
+    <div class="contenedor">
+            <form action="../conexion/action.php" method="post">
+             
+                <input type="text" name="name" placeholder="Nombre completo">
+                <input type="email" name="email" placeholder="Correo Institucional">
+                <input type="tel" name="tel"   minlength="8" maxlength="10" placeholder="Telefono">
+                <input type="text" name="nom_evento" placeholder="Nombre del evento">
+                <input type="text" name="espacio" placeholder="Espacio a solicitar">
+                <input type="date" name="fecha_solicitud" placeholder="Fecha de la solicitud">
+                <input type="time" min="09:00" max="18:00" name="hora" placeholder="hora">
+
+                <input type="text" name="descripcion" placeholder="Descripcion del evento">
+                <input type="submit" name="register">
+         
+            </form>
+        
+    </div>
+</body>
+</html>
