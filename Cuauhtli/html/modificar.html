@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="../imagenes/Foto 2.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../CSS/index_cuauhtli.css" />
+    <title>Index cuauhtli</title>
+</head>
+    <body>
+        <center><br/><br/><br/>
+            <form action="proceso_modificar.php?id=<?php echo $row['id']; ?>" method="POST" enctype="multipart/form-data">
+            <input type="text" required name="nombre" placeholder="Nombre...." value="<?php echo $row ['nombre']; ?>"/><br/><br/>
+            <img height = "100px" src= "data:image/jpg;base64,<?php echo base64_encode($row['imagen']); ?>"/><br/><br/>
+            <input type="file" required name="imagen"/><br/><br/>
+            <input type="submit" value="Aceptar">
+            </form>    
+        </center> 
+    </body>
+</html>
