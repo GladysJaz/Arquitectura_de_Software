@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PDF</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div style="width:500px; margin:auto; border:1px solid blue; padding:30px;">
+        <h4>Subir PDF</h4>
+            <form method="post" action="" enctype="multipart/form-data">
+                <table>
+                    <tr>
+                        <td><label>titulo</label></td>
+                        <td><input type="text" name="titulo"></td>
+                    </tr>
+                    <tr>
+                        <td><label>descripcion</label></td>
+                        <td><textarea name="descripcion"</textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"<input type="file" name="archivo"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="subir"></td>
+                    </tr>
+                </table>
+            </form>
+    </div>                 
+</body>
+</html>
