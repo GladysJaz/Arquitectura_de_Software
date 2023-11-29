@@ -1,78 +1,129 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');*/
+/*Estilos del formulario de Registro*/
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 * {
 	margin:  0;
     padding: 0;
     box-sizing: border-box;
-    /*text-transform: 'popins', sans-serif;*/
 	text-transform: 'Cutive Mono', monospace;
     text-decoration: none;
     list-style: none;
     font-family: 'Cutive Mono', monospace;
-    /*font-family: 'Poppins', sans-serif;*/
-	
+}
+:root{
+    --colorTextos: #e6007e;
 }
 body{
-	
-	background-image: url(../imagenes/fondo.jpg); 
-	background-color: #000000;
-	width: 100%; 
-	height:fit-content;
+		 
+	background-color:white;
+	height: 700px;
+	display:contents;
+	justify-content: left;
+	align-items: center;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+.containerprincipal{
+    display: flex;
+}
+.gif{
+    width: 350px;
+    height: 150px;
+}
+.containerimg{
+    width:30%;
+    height: 20%;
+    display: flex;
+    justify-content:center;
+    background-color:#e687bb;
+}
+.info{
+    background-color: rgb(190, 190, 190);
+    width: 35%;
+    height: 95%;
+    box-sizing: border-box;
+    padding: 20px 15px 10px 15px;
+    border-radius: 10px;
+    margin: 50px 150px;
+}
+.text{
+    height: 85%;
+    overflow-y:hidden;
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 1.5;
+    color: black;
+    font-weight:bold;
 
- }
-.titulo{
-	text-align: center;
-	font-family: 'Poppins', sans-serif;
-	font-size: 35px;
-	font-weight: 300;
 }
 
-form {
-	padding: 50px 20px;
-	background-color: #8195f6;
-	margin: calc(25% + 100px);
-	margin-top: 70px;
-	padding-top: 28px;
-	margin-bottom: 30px;
-	border-radius: 20px;
-}
 
-h1 {
-	text-align: center;
-	padding: 12px;
-	color: #444;
-}
-
-.text-center{
-	padding: 20px;
+h1{
     text-align: center;
-    color: #000000;
-    padding: 20px;
-    font-size: 40px;
+    font-weight: 700;
+    color: #e6007e;
     
 }
 
-input {
-	width: calc(100% - 20px);
-	padding: 9px;
-	margin: auto;
-	margin-top: 12px;
-	font-size: 16px;
-	border-radius: 13px;
+form{
+    padding: 20px 20px;
+    box-shadow: 0 0 20px 0 rgb(236, 135, 34);
+    border-radius: 10px;
+    width:fit-content;
+    margin: 50px 150px;
+    position:static;
+ 
+   
 }
 
-input[type='submit']{
-	background-color: rgb(109, 5, 104);
-	color: #fff;
-	width: calc(80% - 20px);
-	margin: 0 10%;
-	margin-top: 22px;
-	border: none;
+
+p{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 5px;
+   
 }
 
+
+
+input{
+    
+    color: white;
+    font-size: 18px;
+    padding: 5px 5px 5px 5px;
+    display: block;
+    /*width: 100%;*/
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+    
+}
+
+input:focus{
+    outline: none;
+    color: #f39200;
+}
+
+input:focus~label,
+input:valid~label{
+    top: -14px;
+    font-size: 12px;
+    color: #f39200;
+}
+
+
+button{
+    border-radius: 10px;
+    background: linear-gradient(50deg, #e6007e, #f39200);
+    border: none;
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+    color: white;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
 .ok {
 	text-align: center;
 	width: 100%;
@@ -87,104 +138,352 @@ input[type='submit']{
 	background-color: #a22;
 	color: #fff
 }
+@media screen and (max-width: 760px){
+    body{
+        margin: 0px 70px;
+        display:contents;
+        overflow-x: hidden;
+    }
 
-/*--------------------------------ESTILO DEL MENU-------------------------------------------*/
+    :root{
+        --colorTextos: #e6007e;
+    }
+
+    form{
+            width: 100%;
+            margin-left: 10px;
+            margin-right: 20px;
+            padding: 5px 5px;
+    }
+
+    p {
+            font-size: 12px;
+            
+    }
+
+    input {
+            background: none;
+            color: white;
+            font-size: 18px;
+            padding: 5px 5px 5px 5px;
+            display: block;
+            border: none;
+            
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        margin: 0px 70px;
+        display:contents;
+        overflow-x: hidden;
+    }
+    :root{
+        --colorTextos: #e6007e;
+    }
+
+    form {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 20px;
+        padding: 5px 5px;
+    }
+
+    p {
+        font-size: 12px;
+        
+    }
+
+    input {
+        background: none;
+        color: white;
+        font-size: 18px;
+        padding: 5px 5px 5px 5px;
+        display: block;
+        border: none;
+        
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        margin: 0px 70px;
+        display:contents;
+        overflow-x:auto;
+    }
+
+    :root{
+        --colorTextos: #e6007e;
+    }
+
+    form {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 20px;
+        padding: 5px 5px;
+    }
+
+ 
+
+    p {
+        font-size: 12px;
+        
+    }
+
+    input {
+        background: none;
+        color: white;
+        font-size: 18px;
+        padding: 5px 5px 5px 5px;
+        display: block;
+        border: none;
+    
+    }
+
+    h1 {
+        font-size: 12px;
+    
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        margin: 0px 70px;
+        display: inline-block;
+        overflow-x: hidden;
+    }
+    :root{
+        --colorTextos: #e6007e;
+    }
+
+    form {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 20px;
+        padding: 5px 5px;
+    }
+    p {
+        font-size: 12px;
+        
+    }
+
+    input {
+        background: none;
+        color: white;
+        font-size: 18px;
+        padding: 5px 5px 5px 5px;
+        display: block;
+        border: none;
+        
+    }
+
+    h1 {
+        font-size: 12px;
+        
+    }
+}
+
+@media screen and (max-width: 350px) {
+    body {
+        margin: 0px 70px;
+        display: inline-block;
+        overflow-x: hidden;
+    }
+
+    form {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 20px;
+        padding: 5px 5px;
+    }
+    :root{
+        --colorTextos: #e6007e;
+    }
+
+    p {
+        font-size: 12px;
+        
+    }
+
+    input {
+        background: none;
+        color: white;
+        font-size: 18px;
+        padding: 5px 5px 5px 5px;
+        display: block;
+        border: n
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        margin: 0px 70px;
+        display: inline-block;
+        overflow-x: hidden;
+    }
+    :root{
+        --colorTextos: #e6007e;
+    }
+
+    form {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 20px;
+        padding: 5px 5px;
+    }
+
+    p {
+        font-size: 1
+    }
+
+    input {
+        background: none;
+        color: white;
+        font-size: 18px;
+        padding: 5px 5px 5px 5px;
+        display: block;
+        border: n
+    }
+
+   
+}
+
+@media screen and (max-width: 300px) {
+    body {
+        margin: 0px 70px;
+        display: inline-block;
+        overflow-x: hidden;
+    }
+    :root{
+        --colorTextos: #e6007e;
+    }
+
+    form {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 20px;
+        padding: 5px 5px;
+    }
+
+    p {
+        font-size: 1
+    }
+
+    input {
+        background: none;
+        color: white;
+        font-size: 18px;
+        padding: 5px 5px 5px 5px;
+        display: block;
+        border: n
+    }
+
+    h1 {
+        font-size: 12px;
+        
+    }
+	
+}
+
+/*-------------- ESTILO DEL MENU-----------*/
 
 
 .container{
-	max-width: 1200px;
-	margin: 0 auto;
- }
- 
- .content{
-	min-height: 80px ;
-	background: linear-gradient(
-	90deg,
-	rgba(203, 18, 133, 1) 0%,
-	rgba(80, 49, 145, 1) 70%
-	);
- }
- 
- .menu{
-	position:absolute;
-	top: 10px;
-	left: 0;
-	right: 0;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
- }
- 
- .logo{
-	font-size: 25px;
-	color: #ffffff;
-	text-transform:uppercase;
-	font-weight: bold;
- }
- 
- .menu .navbar ul li{
-	position: relative;
-	float: left;
- }
- 
- .menu .navbar ul li a{
-	font-size: 18px;
-	padding: 20px;
-	color: #dedede;
-	display: block;
-	font-weight: bold;
- }
- 
- .menu .navbar ul li a:hover{
-	color: #ffffff;
- }
- 
- #menu{
-	display: none;
- }
- 
- .menu-icono{
-	width: 25px;
- }
- 
- .menu label{
-	cursor: pointer;
-	display: none;
- 
- }
- 
- @media(max-width:991px){
-	.content{
-		min-height: 70px;
-	}
-	.menu{
-		top:0;
-		padding: 20px;
-	}
- 
-	.menu label {
-		display:initial;
-	}
- 
-	.menu .navbar{
-		position: absolute;
-		top:100%;
-		left: 0;
-		right: 0;
-		background: linear-gradient(
-			90deg,
-			rgba(203,18,133,1)0%,
-			rgba(80,49,145,1)70%
-		);
-		display: none;
-	}
- 
-	.menu .navbar ul li {
-		width: 100%;
-	}
-	#menu:checked ~ .navbar{
-		display:initial;
-	}
- 
- }
- 
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.content{
+    min-height: 80px ;
+    background: linear-gradient(
+    90deg,
+    rgba(203, 18, 133, 1) 0%,
+    rgba(80, 49, 145, 1) 70%);
+}
+
+.menu{
+    position:absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 25px;
+    color: #ffffff;
+    text-transform:uppercase;
+    font-weight: bold;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #dedede;
+    display: block;
+    font-weight: bold;
+}
+
+.menu .navbar ul li a:hover{
+    color: #ffffff;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+
+}
+
+@media(max-width:991px){
+    .content{
+        min-height: 70px;
+    }
+    .menu{
+        top:0;
+        padding: 20px;
+    }
+
+    .menu label {
+        display:initial;
+    }
+
+    .menu .navbar{
+        position:absolute;
+        top:100%;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+            90deg,
+            rgba(203,18,133,1)0%,
+            rgba(80,49,145,1)70%
+        );
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display:initial;
+    }
+
+}
+
+
+
