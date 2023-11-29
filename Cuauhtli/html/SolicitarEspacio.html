@@ -36,26 +36,48 @@
       
       <!--Fin del Menu -->
     
-    <div class="header">
-        <p class="titulo"> Solicita un Espacio Cultural</p>
-    </div>
-
+    <div class="containerprincipal">
     <div class="contenedor">
-            <form action="../conexion/action.php" method="post">
-             
-                <input type="text" name="name" placeholder="Nombre completo">
-                <input type="email" name="email" placeholder="Correo Institucional">
-                <input type="tel" name="tel"   minlength="8" maxlength="10" placeholder="Telefono">
-                <input type="text" name="nom_evento" placeholder="Nombre del evento">
-                <input type="text" name="espacio" placeholder="Espacio a solicitar">
-                <input type="date" name="fecha_solicitud" placeholder="Fecha de la solicitud">
-                <input type="time" min="09:00" max="18:00" name="hora" placeholder="hora">
+            <form action="../PHP/form/registrar.php" method="post">
+    <h1>Solicita tu espacio</h1>
 
-                <input type="text" name="descripcion" placeholder="Descripcion del evento">
-                <input type="submit" name="register">
-         
-            </form>
-        
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" placeholder="Correo Institucional" required>
+
+        <label for="tel">Teléfono</label>
+        <input type="tel" id="tel" name="tel" minlength="8" maxlength="10" placeholder="Teléfono" required>
+
+        <label for="nom_evento">Nombre del Evento</label>
+        <input type="text" id="nom_evento" name="nom_evento" placeholder="Nombre del evento" required>
+
+        <label for="espacio">Espacio a Solicitar</label>
+        <input type="text" id="espacio" name="espacio" placeholder="Espacio a solicitar" required>
+
+        <label for="fecha_solicitud">Fecha a Solicitar</label>
+        <input type="date" id="fecha_solicitud" name="fecha_solicitud" placeholder="Fecha de la solicitud" required>
+
+        <label for="hora">Horario (09:00 - 18:00)</label>
+        <input type="time" id="hora" name="hora" min="09:00" max="18:00" placeholder="Horario" required>
+
+        <label for="descripcion">Descripción del Evento</label>
+        <textarea id="descripcion" name="descripcion" placeholder="Descripción del evento" required></textarea>
+
+        <button type="submit" name="register">Regístrate</button>
+</form>
     </div>
+      
+    <div class="info"> 
+      <div class="text"> 
+         <p>En esta sección podrás solicitar una cita para utilizar un espacio dentro de la UACM, ya sea 
+         al aire libre o en un espacio cerrado.</p>
+         <p>Una vez solicitada tu cita deberas esperar la confirmación por correo electronico.</p>
+         <img src="../imagenes/gatito.gif"  class="gif" alt="">
+      </div>
+    </div>
+ 
+</div>   
 </body>
 </html>
