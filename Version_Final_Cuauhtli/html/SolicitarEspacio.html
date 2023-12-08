@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/uacm.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../estilo/SolicitarEspacio.css" />
+    <title>SOLICITARESPACIO</title>
+</head>
+<body>
+    <!--Menu -->
+    <header>
+        <div class="content">
+  
+          <div class="menu container">
+            <a href="portada.html" class="logo">UACM</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="../imagenes/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+              <ul>
+                <li> <a href="portada.html">Inicio</a></li>
+                <li> <a href="Cuauhtli.html">Cuauhtli</a></li>
+                <li> <a href="nosotros.html">Nosotros</a></li>
+                <li> <a href="SolicitarEspacio.html">Solicitar Espacio</a></li>
+                <li> <a href="noticias.html">Noticias</a></li>
+                <li> <a href="Contactanos.html">Contáctanos</a></li>
+                
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      
+      <!--Fin del Menu -->
+    
+      <div class="containerprincipal">
+        <div class="contenedor">
+                <form action="../ConexionForm/action.php" method="post">
+        <h1>Solicita tu espacio</h1>
+    
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+    
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Correo Institucional" required>
+    
+            <label for="tel">Teléfono</label>
+            <input type="tel" id="tel" name="tel" minlength="8" maxlength="10" placeholder="Teléfono" required>
+    
+            <label for="nom_evento">Nombre del Evento</label>
+            <input type="text" id="nom_evento" name="nom_evento" placeholder="Nombre del evento" required>
+    
+            <label for="espacio">Espacio a Solicitar</label>
+            <input type="text" id="espacio" name="espacio" placeholder="Espacio a solicitar" required>
+    
+            <label for="fecha_solicitud">Fecha a Solicitar</label>
+            <input type="date" id="fecha_solicitud" name="fecha_solicitud" placeholder="Fecha de la solicitud" required>
+    
+            <label for="hora">Horario (09:00 - 18:00)</label>
+            <input type="time" id="hora" name="hora" min="09:00" max="18:00" placeholder="Horario" required>
+    
+            <label for="descripcion">Descripción del Evento</label>
+            <textarea id="descripcion" name="descripcion" placeholder="Descripción del evento" required></textarea>
+    
+            <button type="submit" name="register">Regístrate</button>
+    </form>
+        </div>
+          
+        <div class="info"> 
+          <div class="text"> 
+             <p>En esta sección podrás solicitar una cita para utilizar un espacio dentro de la UACM, ya sea 
+             al aire libre o en un espacio cerrado.</p>
+             <p>Una vez solicitada tu cita deberas esperar la confirmación por correo electronico.</p>
+             <img src="../imagenes/gatito.gif"  class="gif" alt="">
+          </div>
+        </div>
+     
+    </div>   
+</body>
+</html>

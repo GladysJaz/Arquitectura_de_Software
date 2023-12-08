@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagenes/uacm.jpg" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../estilo/cuauhtli.css">
+    <title>Index de Imagen</title>
+</head>
+<body>
+  <header>
+      <!--Menu -->
+   <header>
+    <div class="content1">
+
+      <div class="menu container">
+
+        <a href="../html/portada.html" class="logo">UACM</a>
+        <input type="checkbox" id="menu"/>
+        <label for="menu">
+            <img src="../imagenes/menu.png" class="menu-icono" alt="">
+        </label>
+        <nav class="navbar">
+          <ul>
+            <li> <a href="portada.html">Inicio</a></li>
+            <li> <a href="Cuauhtli.html">Cuauhtli</a></li>
+            <li> <a href="nosotros.html">Nosotros</a></li>
+            <li> <a href="SolicitarEspacio.html">Solicitar Espacio</a></li>
+            <li> <a href="noticias.html">Noticias</a></li>
+            <li> <a href="Contactanos.html">Contáctanos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!--Fin del Menu -->
+<!-- ---------------------*inicia formulario para los archivos de imágenes*------------------------------- -->
+  </header>
+   <br/><br/>
+   <h1><em>cuahtli:</em></h1>
+   <hr>
+        <form action="../PHP/guardar_proceso.php" method="POST" enctype="multipart/form-data">
+            
+            <input type="text" name="nombre" placeholder="PONGA SU NOMBRE COMPLETO..." value="" required/><br/><br/>
+            <input type="file" name="Imagen" required/><br/><br/>
+            <input type="submit" value="Aceptar" required/>
+        </form>
+        <!-- ---------------------*inicia formulario para los archivos de imágenes*------------------------------- -->
+
+        <main class="news">
+            <section class="post-list">
+                <div class="content">
+                    <article class="post">
+                        <div class="post-header">
+                            <div class="post-img-1"></div>    
+                        </div>
+                        
+                          <div class="post-body">
+                            <span> 
+                                UACM Cuautepec 2023.
+                            </span>
+                              <h2>Body Art</h2>
+                                <p>
+                                   Pintura artistica de cuerpo completo.<br>
+                                   Tecnica: Oleo.<br>
+                                   Autor: Katia Rodriguez”.<br>
+                                </p>
+                          </div>
+                    </article>
+        
+                    <article class="post">
+                        <div class="post-header">
+                            <div class="post-img-2"></div>
+                        </div>
+                        <div class="post-body">
+                            <span> 
+                                UACM Cuautepec
+                                2023
+                            </span>
+                              <h2>Peregrinación a Wirikuta</h2>
+                                  <p>
+                                      Autor: Julieta S. Negrete Bravo.<br>
+                                      Medidas: 40 x 40 cm.<br>
+                                      Tecnica: Hilo Crsital sobre madera.<br>
+                                
+                                  </p>
+                         </div>
+                    </article>
+        
+                    <article class="post">
+                        <div class="post-header">
+                            <div class="post-img-3"></div>
+                        </div>
+                        <div class="post-body">
+                            <span>UACM Cuautepec| 2023 </span>
+                                <h2>Prometo no llamarte mas</h2>
+                                    <p>
+                                       Autor: Guadalupe Chavez.<br>
+                                       Tecnica: Pluma negra sobre papel fabreano.<br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                    </p>
+                        </div>
+                    </article>
+                  </div>
+            </section>
+        </main>
+        <center><br/><br/><br/>
+        <iframe width="500" height="700" src="https://www.youtube.com/embed/P_6L5uABO5c?si=VU02b-JeJ1p9XLaX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </center>
+   
+</body>
+</html>

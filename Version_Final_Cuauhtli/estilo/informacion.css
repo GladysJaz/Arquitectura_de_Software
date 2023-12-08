@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin:  100;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: center;
+    font-family: 'Poppins', sans-serif;
+ }
+ body {
+   
+   margin: 0;
+   height: auto;
+   padding: 0;
+   background:url(../imagenes/fondo.jpg);
+   transition: background-color 0.3s ease;
+}
+
+.proposito {
+   text-align: center;
+   padding: 20px;
+   background-color:rgba(126, 93, 118, 0.863);
+   margin: 20px;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   opacity: 0;
+   transform: translateY(-20px);
+   animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.imagen-centro {
+   text-align: center;
+   margin-bottom: 20px;
+   opacity: 0;
+   transform: translateY(-20px);
+   animation: fadeInUp 0.8s ease-out 0.3s forwards;
+}
+
+.mediana {
+   border-radius: 50%;
+   animation: fadeIn 1s ease-out 0.6s forwards;
+}
+
+h1 {
+   color: #333;
+   opacity: 0;
+   transform: translateY(-20px);
+   animation: fadeInUp 0.8s ease-out 0.5s forwards;
+}
+
+.texto {
+   max-width: 800px;
+   margin: 0 auto;
+   opacity: 0;
+   transform: translateY(-20px);
+   animation: fadeInUp 0.8s ease-out 0.7s forwards;
+}
+
+.regresar {
+   text-align: center;
+   margin-top: 20px;
+   opacity: 0;
+   transform: translateY(-20px);
+   animation: fadeInUp 0.8s ease-out 0.8s forwards;
+}
+
+.btn {
+   background-color: #007bff;
+   color:brown;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   text-decoration: none;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+   background-color: #0056b3;
+}
+
+a {
+   text-decoration: none;
+   color:#fff;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+span {
+   font-size: 5px;
+}
+
+@keyframes fadeInUp {
+   to {
+       opacity: 1;
+       transform: translateY(0);
+   }
+}
+
+@keyframes fadeIn {
+   to {
+       opacity: 1;
+   }
+}
